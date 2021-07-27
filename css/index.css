@@ -1,0 +1,44 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./main.css);
+@import url(./modal.css);
+
+:root {
+  /* good */
+--bg-main-color: #00000080;
+--accent-color: #f64435; 
+--text-accent-color: #ffe498;
+--smokywhite: #dddbd8;
+--text-edit-bg-color: #575757;
+--bg-accent-color: #2d2d2d;
+
+--shadow-color: #202020;
+--black: #000000;
+
+/* good */
+--border-color: #3f3f3f;
+--document-bg-color: #68686850;
+--component-bg-gradient: radial-gradient(circle, #646464e6 0%, #363636e6 100%);
+--translucent-black: #00000099;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../images/background.png);
+  background-size: cover;
+}
+
+.component {
+  width: 800px;
+  height: 100vh;
+}

@@ -1,0 +1,13 @@
+/*----------------- Footer Start -----------------*/
+footer {
+  position: fixed;
+  top: 891px;
+
+  width: 800px;
+
+  padding: 15px;
+  background-color: #00000080;
+  color: #dddbd8;
+  text-align: center;
+}
+/* Footer End */

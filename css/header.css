@@ -1,0 +1,33 @@
+/*----------------- Header Start -----------------*/
+header {
+  position: fixed;
+  top: 0px;
+  width: 800px;
+  padding: 15px;
+  background-color: #00000080;
+}
+.header-title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f64435;
+}
+
+.header-btns {
+  text-align: center;
+}
+
+.header-btns > button {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: #f64435;
+  border: none;
+  border-radius: 1px;
+  color: #dddbd8;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* Header End */

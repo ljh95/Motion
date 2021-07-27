@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+  <script defer src="./ts/index.js"></script>
+</head>
+
+<body>
+  <div class="component">
+    <!-- Header -->
+    <header>
+      <p class="header-title">MOTION</p>
+      <div class="header-btns">
+        <button class="header-btn image-btn">IMAGE</button>
+        <button class="header-btn video-btn">VIDEO</button>
+        <button class="header-btn note-btn">NOTE</button>
+        <button class="header-btn task-btn">TASK</button>
+      </div>
+    </header>
+    <!-- Body -->
+    <main>
+
+      <article>
+        <div class="article-left">
+          <img class="article-img"
+            src="https://i.picsum.photos/id/280/700/400.jpg?hmac=nHWc6v-sI6HlGXANdRAktZ16ris00u0EN_oL0MOEAG0" alt="">
+        </div>
+        <div class="article-right">
+          <div class="article-body"></div>
+          <div class="article-close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#f64435">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+            </svg>
+          </div>
+        </div>
+      </article>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+      ⓒ Dream Coding Academy All rights reversed
+    </footer>
+
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-container">
+    <div class="modal">
+      <div class="x-box">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#f64435">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path
+            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+        </svg>
+      </div>
+      <div class="modal-title">
+        <label for="title">Title</label>
+        <input class="modal-input" type="text" id="title">
+      </div>
+
+      <div class="modal-body">
+        <label for="body">Body</label>
+        <input class="modal-input" type="text" id="body">
+      </div>
+      <div class="modal-btn-box">
+        <button class="modal-add-btn">ADD</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
