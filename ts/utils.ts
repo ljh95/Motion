@@ -1,5 +1,5 @@
 /** Image 가져오기 */
-export async function makeImageDom(url, articleLeftDom) {
+export async function makeImageDom(url: string, articleLeftDom: HTMLElement) {
   const imgDom = document.createElement('img');
   imgDom.className = 'article-img';
 
@@ -20,7 +20,7 @@ export async function makeImageDom(url, articleLeftDom) {
 }
 
 /** Video 가져오기 */
-export async function makeVideoDom(url, articleLeftDom) {
+export async function makeVideoDom(url: string, articleLeftDom: HTMLElement) {
   try {
     const res = await fetch(`https://www.youtube.com/oembed?url=${url}&format=json`);
     const iframeUrl = await res.json();
