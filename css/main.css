@@ -15,11 +15,6 @@ main {
   overflow: auto;
 }
 
-/* .container {
-  width: 250px;
-  height: 140px;
-  overflow: auto;
-} */
 main::-webkit-scrollbar {
   width: 5px;
 }
@@ -30,17 +25,10 @@ main::-webkit-scrollbar-track {
   background-color: #2d2d2d;
 }
 
-article{
+.article{
   display: flex;
-
   width: 650px;
-  height: 200px;
-
   margin: 5px 0;
-  
-
-  border: none;
-  border-radius: 1px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -64,12 +52,42 @@ article{
 
 .article-body{
   width: 274px;
+  color: #ffe498;
+}
+
+.article-main{
+  width: 626px;
+  height: 100px;
+}
+
+.article-main-title{
+  font-size: 18px;
+  padding: 20px 10px;
+  font-weight: bold;
+  color: #ffe498;
+}
+
+.article-main-body{
+  padding: 0 10px;
+  color: white;
+}
+
+.article-main-task{
+  margin: 40px 10px 0;
+  color: white;
 }
 
 .article-close-btn{
-  width: 24px;
   display: flex;
   align-items: center;
+}
+
+.article-close-btn-text{
+  color: red;
+  font-weight: bold;
+}
+
+.article-close-btn > * {
   cursor: pointer;
 }
 /* Main end */

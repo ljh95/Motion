@@ -9,7 +9,8 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Document</title>
-  <script defer src="./ts/index.js"></script>
+  <script defer type="module" src="./ts/index.js"></script>
+  <script defer type="module" src="./ts/utils.js"></script>
 </head>
 
 <body>
@@ -18,31 +19,17 @@
     <header>
       <p class="header-title">MOTION</p>
       <div class="header-btns">
-        <button class="header-btn image-btn">IMAGE</button>
-        <button class="header-btn video-btn">VIDEO</button>
-        <button class="header-btn note-btn">NOTE</button>
-        <button class="header-btn task-btn">TASK</button>
+        <button class="header-btn image-btn" data-type="IMAGE">IMAGE</button>
+        <button class="header-btn video-btn" data-type="VIDEO">VIDEO</button>
+        <button class="header-btn note-btn" data-type="NOTE">NOTE</button>
+        <button class="header-btn task-btn" data-type="TASK">TASK</button>
       </div>
     </header>
     <!-- Body -->
     <main>
+      <!-- <article>
 
-      <article>
-        <div class="article-left">
-          <img class="article-img"
-            src="https://i.picsum.photos/id/280/700/400.jpg?hmac=nHWc6v-sI6HlGXANdRAktZ16ris00u0EN_oL0MOEAG0" alt="">
-        </div>
-        <div class="article-right">
-          <div class="article-body"></div>
-          <div class="article-close-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#f64435">
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path
-                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
-            </svg>
-          </div>
-        </div>
-      </article>
+      </article> -->
 
     </main>
     <!-- Footer -->
@@ -69,8 +56,8 @@
       </div>
 
       <div class="modal-body">
-        <label for="body">Body</label>
-        <input class="modal-input" type="text" id="body">
+        <label class="modal-body-label" for="body">URL</label>
+        <input class="modal-input" type="text" id="url">
       </div>
       <div class="modal-btn-box">
         <button class="modal-add-btn">ADD</button>
